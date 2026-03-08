@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Student Registration</title>
+</head>
+
+<body>
+
+<!-- Page Heading -->
+
+<h1>Student Registration Form</h1>
+
+<p>Welcome to the Fullstack Training Registration Page</p>
+
+<hr>
+
+<form>
+
+<!-- Textbox -->
+
+<label>Full Name:</label><br>
+<input type="text" placeholder="Enter your name"><br><br>
+
+<!-- Email -->
+
+<label>Email:</label><br>
+<input type="email" placeholder="Enter your email"><br><br>
+
+<!-- Password -->
+
+<label>Password:</label><br>
+<input type="password" placeholder="Enter password"><br><br>
+
+<!-- Phone with Pattern -->
+
+<label>Phone:</label><br>
+<input type="tel" pattern="[0-9]{10}" placeholder="Enter 10 digit number"><br><br>
+
+<!-- Date -->
+
+<label>Date of Birth:</label><br>
+<input type="date"><br><br>
+
+<!-- Radio Button -->
+
+<label>Gender:</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female<br><br>
+
+<!-- Checkbox -->
+
+<label>Skills:</label><br>
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> Java<br><br>
+
+<!-- Dropdown -->
+
+<label>Course:</label><br>
+
+<select>
+
+<option>Java Fullstack</option>
+<option>Python Fullstack</option>
+<option>Frontend Development</option>
+
+</select>
+
+<br><br>
+
+<!-- Datalist -->
+
+<label>Preferred Browser:</label><br>
+
+<input list="browsers">
+
+<datalist id="browsers">
+<option value="Chrome">
+<option value="Edge">
+<option value="Firefox">
+<option value="Safari">
+</datalist>
+
+<br><br>
+
+<!-- Range -->
+
+<label>Experience Level:</label><br>
+<input type="range" min="0" max="10"><br><br>
+
+<!-- File Upload -->
+
+<label>Upload Resume:</label><br>
+<input type="file"><br><br>
+
+<!-- Buttons -->
+
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+
+</form>
+
+<hr>
+
+<!-- Table Example -->
+
+<h2>Available Courses</h2>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Course</th>
+<th>Duration</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Java Fullstack</td>
+<td>6 Months</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Python Fullstack</td>
+<td>6 Months</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- List Example -->
+
+<h2>Technologies Covered</h2>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Java</li>
+<li>Spring Boot</li>
+</ul>
+
+<hr>
+
+<!-- Anchor Tag -->
+
+<p>
+Visit our training website:
+<a href="https://www.google.com">Click Here</a>
+</p>
+
+<hr>
+
+<!-- Audio -->
+
+<h2>Motivation Audio</h2>
+
+<audio controls>
+<source src="audio.mp3">
+</audio>
+
+<hr>
+
+<!-- Video -->
+
+<h2>Training Introduction Video</h2>
+
+<video controls width="400">
+<source src="video.mp4">
+</video>
+
+</body>
+</html>
