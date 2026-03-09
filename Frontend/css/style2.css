@@ -1,0 +1,50 @@
+/* Universal selector */
+* {
+font-family: Arial;
+}
+
+/* Element selector */
+p {
+color: blue;
+}
+
+/* ID selector */
+#title {
+color: red;
+}
+
+/* Class selector */
+.box {
+background-color: lightyellow;
+border: 2px solid black;
+}
+
+/* Grouping selector */
+h2, h3 {
+color: green;
+}
+
+/* Descendant selector */
+div p {
+color: purple;
+}
+
+/* Child selector */
+section > p {
+color: orange;
+}
+
+/* Adjacent sibling selector */
+h4 + p {
+color: brown;
+}
+
+/* General sibling selector */
+h5 ~ p {
+color: pink;
+}
+
+/* Attribute selector */
+input[type="text"] {
+border: 2px solid red;
+}
