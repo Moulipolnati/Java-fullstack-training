@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Do While Factorial</title>
+</head>
+<body>
+
+<h2>Factorial using do-while</h2>
+
+<script>
+
+// Function using do-while loop
+function factorialDoWhile() {
+
+    let num = 5;
+    let fact = 1;
+    let i = 1;
+
+    do {
+        fact = fact * i;
+        i++;
+    } while (i <= num);
+
+    document.write("Factorial = " + fact);
+}
+
+// Calling function
+factorialDoWhile();
+
+</script>
+
+</body>
+</html>

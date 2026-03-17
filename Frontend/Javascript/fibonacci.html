@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fibonacci Program</title>
+</head>
+<body>
+
+<h2>Fibonacci Series</h2>
+
+<script>
+
+// Function to print fibonacci series
+function fibonacci() {
+
+    let n = 10;
+    let a = 0, b = 1;
+    let i = 1;
+
+    document.write("Fibonacci Series: <br>");
+    document.write(a + " " + b + " ");
+
+    while (i <= n - 2) {
+
+        let next = a + b;
+        document.write(next + " ");
+
+        a = b;
+        b = next;
+
+        i++;
+    }
+}
+
+// Calling function
+fibonacci();
+
+</script>
+
+</body>
+</html>
