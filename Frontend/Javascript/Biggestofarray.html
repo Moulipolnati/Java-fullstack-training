@@ -1,0 +1,21 @@
+<script>
+
+function biggestElement() {
+
+    let arr = [10, 45, 2, 99, 23];
+
+    let max = arr[0]; // assume first is biggest
+
+    for (let i = 1; i < arr.length; i++) {
+
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    document.write("Biggest element: " + max + "<br>");
+}
+
+biggestElement();
+
+</script>
