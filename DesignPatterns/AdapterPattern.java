@@ -1,0 +1,40 @@
+package com.desigh;
+//Target Interface
+interface Printer {
+ void print();
+}
+
+//Adaptee
+class LegacyPrinter {
+ public void printDocument() {
+     System.out.println("Legacy Printer is printing a document.");
+ }
+}
+
+//Adapter
+class PrinterAdapter implements Printer {
+ private LegacyPrinter legacyPrinter;
+
+ public PrinterAdapter() {
+     this.legacyPrinter = new LegacyPrinter();
+ }
+
+ @Override
+ public void print() {
+     legacyPrinter.printDocument();
+ }
+}
+
+//Client Code
+public class AdapterPattern {
+
+ public static void clientCode(Printer printer) {
+     printer.print();
+ }
+
+ public static void main(String[] args) {
+     // Using the Adapter
+     Printer adapter = new PrinterAdapter(); // better practice
+     clientCode(adapter);
+ }
+}
