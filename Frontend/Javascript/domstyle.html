@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Style Change</title>
+</head>
+<body>
+
+<h2 id="text">Change My Color</h2>
+
+<button onclick="changeColor()">Click</button>
+
+<script>
+
+function changeColor() {
+
+    let element = document.getElementById("text");
+
+    // Change CSS style
+    element.style.color = "red";
+}
+
+</script>
+
+</body>
+</html>
